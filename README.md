@@ -22,10 +22,18 @@ Cradle is a repository for my small ideas, experiments and lightweight prototype
 ```bash
 Cradle/
 │
-├── data/
-│   └── projects.json
-│
-├── projects/
+├── .github/                   # GitHub workflows, issue templates, and CI configs
+├── .vscode/                   # Recommended workspace settings for VS Code
+├── assets/                    # Project brand assets, preview images, and favicons
+├── client/                    # Frontend client modules and shared React resources
+│   └── src/                   # React components, styles, and client utilities
+├── data/                      # Generated project registry and worker integrity hashes
+│   ├── projects.json          # Catalog of all registered mini projects
+│   └── worker-integrity.json  # Checksums for Web Worker scripts
+├── docs/                      # Architectural guides, contracts, and pipelines
+│   ├── ASSET_PIPELINE.md      # Asset naming, fingerprinting and caching
+│   └── MINI_CONTRACT.md       # Contract every mini-project must follow
+├── projects/                  # Mini project source directories grouped by category
 │   ├── aiml/                  # AI & Machine Learning prototypes
 │   ├── dev-tools/             # Developer utilities & code formatters
 │   ├── editor/                # Creative design & document generation tools
@@ -34,26 +42,34 @@ Cradle/
 │   ├── math/                  # Mathematical visualizations & algorithms
 │   ├── misc/                  # Audio, camera & hardware utilities
 │   └── productivity/          # Personal trackers & planning tools
-│
+├── schemas/                   # JSON schemas for project registry validation
 ├── scripts/                   # Generators & project validation scripts
 ├── src/                       # Shared UI components & design tokens
 ├── tests/                     # Automated test suites & validation checks
 │
 ├── ARCHITECTURE.md            # Overall repository architecture overview
 ├── ARCHITECTURE_TEMPLATE.md   # Standardized template for mini projects
+├── CODE_OF_CONDUCT.md         # Community guidelines and code of conduct
 ├── CONTRIBUTING.md            # Guidelines for repository contributors
-├── docs/
-│   ├── ASSET_PIPELINE.md      # Asset naming, fingerprinting and caching
-│   └── MINI_CONTRACT.md       # Contract every mini-project must follow
+├── CREDENTIALS_AND_SECRETS.md # Token safety, secrets prevention, and CI security policy
+├── LICENSE                    # Open-source license terms (MIT)
+├── package.json               # Project manifest, dependencies, and npm scripts
+├── package-lock.json          # Deterministic dependency lockfile
 ├── README.md                  # Project overview documentation
+├── RELEASE_INTEGRITY.md       # Release asset checksum and verification guide
 ├── SECURE_DEPLOYMENT_CHECKLIST.md # Baseline security checklist for production
 ├── SECURITY.md                # Project security policy and worker integrity
 ├── STORAGE_POLICY.md          # Storage API and conflict-resolution strategy
+├── TESTING.md                 # Testing strategy, CI quality gates, and architecture
 ├── THIRD_PARTY_POLICY.md      # Rules for loading external models and scripts
+├── TROUBLESHOOT.md            # Solutions for common setup, build, and Git issues
 ├── index.html                 # Main landing page entry point
 ├── script.js                  # Global landing page logic & search engine
 └── style.css                  # Core CSS design system
 ```
+
+> [!NOTE]
+> Local development tooling and VCS configuration files (`.git/`, `node_modules/`, `.gitignore`, `.node-version`, `.nvmrc`, `.prettierrc`, and `.prettierignore`) are deliberately omitted from this tree for clarity.
 
 ## Getting started
 

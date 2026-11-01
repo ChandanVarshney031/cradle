@@ -118,10 +118,10 @@ http://localhost:8000/projects/aiml/image-classifier/
 
 The Cradle landing page supports intuitive keyboard navigation:
 
-- `<kbd>/</kbd>` or `<kbd>Ctrl</kbd>+<kbd>K</kbd>` / `<kbd>Cmd</kbd>+<kbd>K</kbd>` — Focus the project search bar
-- `<kbd>Esc</kbd>` — Clear active search query and reset category filters / close modal dialogs
-- `<kbd>T</kbd>` — Toggle light / dark color theme
-- `<kbd>?</kbd>` — Open / close the keyboard shortcuts help dialog
+- <kbd>/</kbd> or <kbd>Ctrl</kbd>+<kbd>K</kbd> / <kbd>Cmd</kbd>+<kbd>K</kbd> — Focus the project search bar
+- <kbd>Esc</kbd> — Clear active search query and reset category filters / close modal dialogs
+- <kbd>T</kbd> — Toggle light / dark color theme
+- <kbd>?</kbd> — Open / close the keyboard shortcuts help dialog
 
 ## 🌐 Browser Compatibility & Progressive Fallbacks
 
